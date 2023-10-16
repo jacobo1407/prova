@@ -18,8 +18,10 @@ import {
 } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
-const Nom=( textaMostrar:string)=>{
-  return ( <Text style ={estils.sectionTitle}>{textaMostrar}</Text>)
+const Nom=( textaMostrar:string , estil)=>{
+  return (
+     <Text style ={{fontStyle:estil}}>{textaMostrar}</Text>
+     );
 }
 
 
@@ -30,7 +32,7 @@ const  App =  () => {
       
   <PaperJacobo>
     <StatusBar/>
-    {Nom("jacobo curras sanchez")}
+    {Nom("jacobo curras sanchez","italic")}
   </PaperJacobo>
   );
 }
@@ -45,6 +47,7 @@ const estils = StyleSheet.create({
     color:'black',
     fontSize: 24,
     fontWeight: '600',
+  
   },
   sectionDescription: {
     marginTop: 8,

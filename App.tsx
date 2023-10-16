@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import { Button, Switch, TextInput } from 'react-native-paper';
+import { Provider as PaperJacobo } from 'react-native-paper';
 
 import {
   
@@ -18,33 +18,19 @@ import {
 } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
-
+const Nom=( )=>{
+  return <Text>jacobo curras sanchez</Text>
+}
 
 
 const  App =  () => {
-  
-    const [isSwitchOn, setIsSwitch] = React.useState(false);
-  
-    
-  
+
 
   return (
-       <View>
-
-      <StatusBar/>
-      <Text style={estils.sectionTitle}>text input EMAIL</Text>
-      <TextInput  placeholder='EMAIL' keyboardType='email-address'></TextInput>
-      <Text>{'\n'}</Text>
-      <Text style={estils.sectionTitle}>button(amb text i coma)</Text>
-      <Button style={{backgroundColor:'purple'}} labelStyle={{color:'white'}} icon='alien'>alien</Button>
-      <Button style={{backgroundColor:'purple'}} labelStyle={{backgroundColor:'purple',color:'black'}} icon='alien'>alien</Button>
-      <Button style={estils.button} mode='outlined' icon='alien'>alien</Button>
-      <Button style={estils.button} icon='alien'>alien</Button>
-      <Text>{'\n'}</Text>
-      <Text style={estils.sectionTitle}>switch Necessites un descans?</Text>
-      <Switch value={isSwitchOn} onValueChange={()=>setIsSwitch(!isSwitchOn)}></Switch>
-       </View>
-  
+      
+  <PaperJacobo>
+    
+  </PaperJacobo>
   );
 }
 
@@ -55,6 +41,7 @@ const estils = StyleSheet.create({
 
   },
   sectionTitle: {
+    color:'black',
     fontSize: 24,
     fontWeight: '600',
   },

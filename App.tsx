@@ -18,8 +18,8 @@ import {
 } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
-const Nom=( )=>{
-  return <Text>jacobo curras sanchez</Text>
+const Nom=( textaMostrar:string)=>{
+  return ( <Text style ={estils.sectionTitle}>{textaMostrar}</Text>)
 }
 
 
@@ -29,7 +29,8 @@ const  App =  () => {
   return (
       
   <PaperJacobo>
-    
+    <StatusBar/>
+    {Nom("jacobo curras sanchez")}
   </PaperJacobo>
   );
 }

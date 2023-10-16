@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import { Provider as PaperJacobo } from 'react-native-paper';
+import { Provider as PaperJacobo, TextInput } from 'react-native-paper';
 
 import {
   
@@ -23,7 +23,9 @@ const Nom=( textaMostrar:string , estil)=>{
      <Text style ={{fontStyle:estil}}>{textaMostrar}</Text>
      );
 }
-
+const Dades=()=>{
+  return <TextInput></TextInput>
+}
 
 const  App =  () => {
 
@@ -33,6 +35,7 @@ const  App =  () => {
   <PaperJacobo>
     <StatusBar/>
     {Nom("jacobo curras sanchez","italic")}
+    {Dades("email")}
   </PaperJacobo>
   );
 }

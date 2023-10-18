@@ -24,6 +24,7 @@ const Nom=( textaMostrar:string , estil)=>{
      );
 }
 const Dades=()=>{
+
   return <TextInput></TextInput>
 }
 
